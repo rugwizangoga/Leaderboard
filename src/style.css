@@ -54,3 +54,8 @@ h1 {
 .addscore form .refresh {
   align-self: flex-end;
 }
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
