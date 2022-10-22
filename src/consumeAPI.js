@@ -4,11 +4,18 @@ export const refreshTable = async (link) => {
     .then((json) => {
       const table = document.querySelector('.table');
       table.replaceChildren();
+      let index = 1;
       json.result.forEach((scores) => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
         ${scores.user}: ${scores.score}
     `;
+        if (index % 2 === 0) {
+          listItem.classList.add('whitebcolor');
+        } else {
+          listItem.classList.add('graybcolor');
+        }
+        index += 1;
         table.append(listItem);
       });
     });
