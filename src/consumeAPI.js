@@ -1,6 +1,6 @@
-export const refreshTable  = async(link)=>{
-  let response= await fetch(link);
-  response= await response.json()
+export const refreshTable = async (link) => {
+  const response = await fetch(link);
+  await response.json()
     .then((json) => {
       const table = document.querySelector('.table');
       table.replaceChildren();
@@ -14,8 +14,8 @@ export const refreshTable  = async(link)=>{
     });
 };
 
-export const addNewScore = async(link, user, score) => {
-  const response= await fetch(link, {
+export const addNewScore = async (link, user, score) => {
+  await fetch(link, {
     method: 'POST',
     body: JSON.stringify({
       user,
