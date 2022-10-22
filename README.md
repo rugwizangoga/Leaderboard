@@ -15,6 +15,9 @@ Leaderboard is a web app that assists in the creation of a working version of th
 - Es6 and webpack
 - gitflow
 
+## Live demo
+[live link](https://rugwizangoga.github.io/Leaderboard/dist/)
+
 ## Getting Started
 
 $ git clone https://github.com/rugwizangoga/Leaderboard.git
